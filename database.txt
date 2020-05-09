@@ -1,0 +1,21 @@
+create database idanProject;
+use idanProject;
+create table idanT (fname varchar(20) character set hebrew,lname varchar(20) character set hebrew,email varchar(40),password varchar(10),bornyear int,bornmonth int,bornday int,gender varchar (6),surftype varchar(10),admin varchar(3) default'no');
+
+create table idanS (name varchar(20),country varchar(20) character set hebrew,maxheight int,minheight int,length int,img varchar(40),href varchar(60),blue int,red int,black int);
+
+
+insert into idanT values('idan','mashiach','idan7575@walla.com','idan7575',1997,9,15,'male','ski','admin');
+
+
+insert into idanS values ('Tignes','France',3450,1550,300,'tignes.jpg','http://www.tignes.net/en',88,38,20);
+insert into idanS values ('Val Thorens','France',3200,900,600,'val.jpg','http://www.valthorens.com/',184,118,34);
+insert into idanS values ('Avoriaz','France',2466,1800,650,'Avoriaz.jpg','http://www.avoriaz.com/',25,14,6);
+
+insert into idanS values ('St. Moritz','Switzerland',3300,1720,350,'st.JPG','http://www.stmoritz.ch/',70,245,35);
+insert into idanS values ('Zermatt','Switzerland',3900,1620,349,'Zermatt.jpg','http://www.zermatt.ch/en/',15,24,20);
+insert into idanS values ('Saas-Fee','Switzerland',3500,1800,100,'saas-fee.jpg','http://www.saas-fee.ch/de/WillkommenSommer',11,16,8);
+
+insert into idanS values ('Sella Ronda','Itali',3270,1440,1233,'sella.JPG','http://www.sella-ronda.info/eng/index.html',140,115,20);
+insert into idanS values ('Madonna di Campiglio','Itali',2504,1500,170,'madonna.jpg','http://www.campiglio.com/',24,24,9);
+insert into idanS values ('Passo Tonale','Itali',3100,1155,290,'passo.jpg','http://www.passotonale.it/',53,44,27);
